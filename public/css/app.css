@@ -1,0 +1,5 @@
+@font-face{
+    font-family: "Gotham";
+    src: url('./Gotham.otf');
+  }
+*{font-family: 'Gotham',  sans-serif;}
