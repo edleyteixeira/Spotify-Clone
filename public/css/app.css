@@ -1,5 +1,125 @@
 @font-face{
-    font-family: "Gotham";
-    src: url('./Gotham.otf');
-  }
-*{font-family: 'Gotham',  sans-serif;}
+  font-family: "Spotify-Black";
+  src: url('../font/Spotify-Black.woff2') format("woff2");
+}
+@font-face{
+  font-family: "Spotify-Bold";
+  src: url('../font/Spotify-Bold.woff2') format("woff2");
+}
+@font-face{
+  font-family: "Spotify-Book";
+  src: url('../font/Spotify-Book.woff2') format("woff2");
+}
+@font-face{
+  font-family: "Spotify-Light";
+  src: url('../font/Spotify-Light.woff2') format("woff2");
+}
+@font-face{
+  font-family: "Gotham";
+  src: url('../font/Gotham-Light.otf') format("otf");
+}
+/*RESET*/
+*{font-family: 'Spotify-Black'; color: #fff; margin: 0; font-weight: 100; text-decoration: none;}
+
+/* ELEMENTS*/
+
+.bar-menu{background-color: #000000; padding: 8px; display: flex; justify-content: space-between;}
+.brand{align-items:center; display: flex; }
+.brand span{margin-left: 5px;  font-family: 'Spotify-Bold'; }
+.btn-menu{ background: none; border: none; color: #fff; cursor: pointer;}
+figcaption{display: none; }
+.logo-top img {width: 25px; margin-right: 2%;}
+.menu{display:none; position: fixed; top:0; right: 0; width: 100%; flex-direction: column; background-color: #000000; height: 100%;}
+.menu button{align-self: flex-end; padding: 1%; top: 0; margin:0 5% 0 0; width: 30px;}
+.menu a{margin-left: 10%; text-decoration: none; margin-bottom: 5%; font-size: 2em; margin-top: 0;}
+.menu hr{width: 30px;  border-color: #fff; margin:10% 10%;}
+.link-b{ font-family: 'Gotham'; font-weight: normal;}
+.logo-menu{display: flex; position: absolute; bottom: 10%; margin: 0 0 0 10%;}
+.menu span{margin-left: 5px;}
+.menu-desktop{display:none; }
+
+.premium{background-color: #993399; padding: 30px 4%;font-family: 'Gotham-thin'; display: flex; flex-direction: column;}
+h6{font-family: 'Spotify-Book'; text-align: center; font-size: .66em; font-weight: 300; }
+h1{font-family: 'Spotify-Bold'; margin: 5% 0; font-size: 1.9em; }
+h2{margin-top: 5%; font-family: 'Spotify-Book'; font-size: 1.15em; line-height: 1.5em;}
+button{background-color: #000000; border-radius: 50px; padding: 5%; margin: auto; margin-top: 5%; border: none; align-self: center; width: 100%; }
+p{margin-top: 12%; font-size: .78em; font-family: 'Spotify-Book'; line-height: 1.2em;} .premium a{font-size: .9em;}
+.premium figure img{width: 100%; margin-top: 10%;}
+
+.free{display: flex; flex-direction: column; padding: 15% 4%; background-image: url('/public/svg/bolhas-mobile.svg'); background-color: #2941ab; background-position:65% 55%;background-size:auto 177%;background-repeat:no-repeat;}
+.free h6,.free h1,.free h2{color: #1ed760; text-align: center;}
+.free h6{margin-bottom: 30px;}
+.free h1{margin-bottom: 30px;}
+.free h2{margin-bottom: 35px;}
+.free button{background-color: #1ed760; color: #2941ab;margin: auto; width: auto; padding: 15px 30px; margin-bottom: 70px;}
+
+.footer{padding: 20px; display: flex; flex-direction: column; background-color: #000000;}
+.brand-footer{margin-top: 15px; margin-bottom: 15px; display: flex; flex-direction: row!important; font-family: 'Spotify-Light'; }
+.brand-footer img{width: 25px; height: 25px; }
+.brand-footer span{margin-left: 1%;}
+
+.footer h1{color: #777370; font-size: .8em;}
+.footer div{display: flex; flex-direction: column; margin-top: 30px;}
+.footer .links a{font-size: .8em; text-decoration: none; margin-top: 30px;}
+
+.sociais{flex-direction: row!important; }
+.sociais a{margin-top: 100px; background-color: #777370; padding:10px  10px; border-radius:50%; margin-right: 3%;}
+.footer .left{align-self: flex-end; color: #777370; font-size: .7em;}
+.legal{flex-direction: row!important; justify-content: space-between; margin-top: 0!important; font-size: .7em; }
+.legal-links{flex-direction: row!important; flex-wrap: wrap; width: 60%;}
+.legal-links a{font-size: .9em; color: #777370; text-decoration: none; margin-right: 20px; margin-bottom: 30px; }
+.copy{color: #777370; font-size: .8em;}
+
+
+@media screen and (min-width: 450px) {.menu{width: 450px;}
+@media screen and (min-width: 768px) {
+  h1{font-size:4em;}
+  h2{font-size: 1.5em;}
+  .premium button{width: auto; padding: 14px; font-size: 1em; font-size: 'Spotify-Light';}
+  .premium p{margin-top: 25px;}
+  .premium figure {width: 300px; margin: auto; margin-top: 20px;}
+
+  .free{background-image: url('/public/svg/bolhas-tablet.svg'); background-position:center center;background-size:auto 168%;background-repeat:no-repeat;}
+  .footer{padding: 0 10%;}
+  .footer-container{display: flex; flex-direction: row!important; flex-wrap: wrap; margin-top: 5px;}
+  .brand-footer{margin-bottom: 5px;}
+  .links{width: 30%;}
+  .bar-menu{padding: 1% 5%;}
+}
+
+@media screen and (min-width: 992px) {
+  .menu-desktop{display: flex; width: 60%; justify-content: space-around;}
+  .btn-menu, menu{display: none!important;}
+  .bar-menu{padding: 2.7% 2% 2.7% 5%; font-size: 1em; margin: 0;}
+  .bar-menu hr{height: 20px;}
+  .premium{padding: 0 7%;}
+  .premium h6{margin-top: 50px!important;}
+  .premium h1{margin-top: 10px;}
+  .premium h2{font-size: 1.6em;}
+  .links{width: 20%;}
+  .premium figure{width: 400px; margin-bottom: 50px;}
+
+}
+
+@media screen and (min-width: 1200px) {
+  .bar-menu{padding:2% 1% 1% 4%; }
+  .bar-menu span{font-size: 1.8em;}
+  .brand img{width: 40px;}
+  .premium{flex-direction: row; padding: 4% 7%;}
+  .premium h1{line-height: normal;}
+  .premium h6{text-align: start;  font-size: 1em; margin-bottom: 3%;}
+  .premium figure{width: 550px; margin-left: 3%;}
+  .premium p{margin-bottom: 30px;}
+
+  .free{background-image: url('/public/svg/bolhas-desktop.svg');background-position:right center;background-size:auto 100%;background-repeat:no-repeat}
+  .free{align-items: flex-start; padding: 4% 7.5%;}
+  .free button{margin-left:0 ;}
+  .free h6{margin-top: 1.8%; font-size: 1em; font-family: 'Spotify-Bold'; }
+  .free h1{margin-top: .25%;}
+  .free h2{margin-top: 1%; width: 45%; text-align: start;}
+
+  
+  .sociais a{margin-top: 0; width: 30px; height: 30px; background-color: #222326;}
+  .footer-container{justify-content: space-between; width: 80%; }
+  .desktop {display: flex; flex-direction: row!important;  justify-content: space-around; align-items: baseline!important;}
+  }}
