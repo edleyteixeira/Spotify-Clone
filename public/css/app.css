@@ -19,7 +19,9 @@
   src: url('../font/Gotham-Light.otf') format("otf");
 }
 /*RESET*/
-*{font-family: 'Spotify-Black'; color: #fff; margin: 0; font-weight: 100; text-decoration: none;}
+*{font-family: 'Spotify-Black'; color: #fff; margin: 0; font-weight: 100; text-decoration: none; }
+button{cursor: pointer;}
+
 
 /* ELEMENTS*/
 
