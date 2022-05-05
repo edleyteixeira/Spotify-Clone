@@ -46,7 +46,7 @@ button{background-color: #000000; border-radius: 50px; padding: 5%; margin: auto
 p{margin-top: 12%; font-size: .78em; font-family: 'Spotify-Book'; line-height: 1.2em;} .premium a{font-size: .9em;}
 .premium figure img{width: 100%; margin-top: 10%;}
 
-.free{display: flex; flex-direction: column; padding: 15% 4%; background-image: url('/public/svg/bolhas-mobile.svg'); background-color: #2941ab; background-position:65% 55%;background-size:auto 177%;background-repeat:no-repeat;}
+.free{display: flex; flex-direction: column; padding: 15% 4%; background-image: url('https://edleyteixeiraportifolio.000webhostapp.com/Spotify/public/svg/bolhas-mobile.svg'); background-color: #2941ab; background-position:65% 55%;background-size:auto 177%;background-repeat:no-repeat;}
 .free h6,.free h1,.free h2{color: #1ed760; text-align: center;}
 .free h6{margin-bottom: 30px;}
 .free h1{margin-bottom: 30px;}
@@ -79,7 +79,7 @@ p{margin-top: 12%; font-size: .78em; font-family: 'Spotify-Book'; line-height: 1
   .premium p{margin-top: 25px;}
   .premium figure {width: 300px; margin: auto; margin-top: 20px;}
 
-  .free{background-image: url('/public/svg/bolhas-tablet.svg'); background-position:center center;background-size:auto 168%;background-repeat:no-repeat;}
+  .free{background-image: url('https://edleyteixeiraportifolio.000webhostapp.com/Spotify/public/svg/bolhas-tablet.svg'); background-position:center center;background-size:auto 168%;background-repeat:no-repeat;}
   .footer{padding: 0 10%;}
   .footer-container{display: flex; flex-direction: row!important; flex-wrap: wrap; margin-top: 5px;}
   .brand-footer{margin-bottom: 5px;}
@@ -111,7 +111,7 @@ p{margin-top: 12%; font-size: .78em; font-family: 'Spotify-Book'; line-height: 1
   .premium figure{width: 550px; margin-left: 3%;}
   .premium p{margin-bottom: 30px;}
 
-  .free{background-image: url('/public/svg/bolhas-desktop.svg');background-position:right center;background-size:auto 100%;background-repeat:no-repeat}
+  .free{background-image: url('https://edleyteixeiraportifolio.000webhostapp.com/Spotify/public/svg/bolhas-desktop.svg');background-position:right center;background-size:auto 100%;background-repeat:no-repeat}
   .free{align-items: flex-start; padding: 4% 7.5%;}
   .free button{margin-left:0 ;}
   .free h6{margin-top: 1.8%; font-size: 1em; font-family: 'Spotify-Bold'; }
